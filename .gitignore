@@ -15,3 +15,9 @@ vignettes/*.pdf
 
 # Mac OSX
 .DS_Store
+
+# Coda
+_site/
+
+# Other
+*.lock
