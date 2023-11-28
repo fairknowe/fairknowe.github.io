@@ -1,0 +1,372 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="assets/stylesheets/skuvu.css">
+    <link rel="stylesheet" href="assets/stylesheets/polaris.css">
+</head>
+
+<body>
+    <div class="Polaris-Frame Polaris-Frame--hasNav Polaris-Frame--hasTopBar">
+        <div class="Polaris-Frame__TopBar" data-polaris-layer="true" data-polaris-top-bar="true" id="AppFrameTopBar">
+            <div class="Polaris-TopBar">
+                <div class="Polaris-TopBar__Container">
+                    <div class="Polaris-TopBar__LeftContent">
+                        <button type="button" id="menuToggle" class="Polaris-TopBar__NavigationIcon" style="background-color:transparent;" aria-label="Toggle menu">
+                            <div id="hamburger" style="display:block; background-color:unset; z-index: 1000;">
+                                <div class="Polaris-TopBar__IconWrapper">
+                                    <span class="Polaris-Icon">
+                                        <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M3 4.75a.75.75 0 0 1 .75-.75h12.5a.75.75 0 0 1 0 1.5h-12.5a.75.75 0 0 1-.75-.75Z">
+                                            </path>
+                                            <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h12.5a.75.75 0 0 1 0 1.5h-12.5a.75.75 0 0 1-.75-.75Z">
+                                            </path>
+                                            <path fill-rule="evenodd" d="M3 15.25a.75.75 0 0 1 .75-.75h12.5a.75.75 0 0 1 0 1.5h-12.5a.75.75 0 0 1-.75-.75Z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </button>
+                        <div id="menu" style="display:none; background-color:beige; z-index: 100;">
+                            <ul class="Polaris-Navigation__Section Polaris-Navigation__Section--withSeparator">
+                                <li class="Polaris-Navigation__ListItem" id="home">
+                                    <div class="Polaris-Navigation__ItemWrapper">
+                                        <div class="Polaris-Navigation__ItemInnerWrapper">
+                                            <a class="Polaris-Navigation__Item" tabindex="0" href="index.html">
+                                                <div class="Polaris-Navigation__Icon">
+                                                    <span class="Polaris-Icon">
+                                                        <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
+                                                        </span>
+                                                        <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true">
+                                                            <path fill-rule="evenodd"
+                                                                d="M8.344 3.692a2.25 2.25 0 0 1 3.312 0l3.854 4.19a3.75 3.75 0 0 1 .99 2.538v3.33a2.75 2.75 0 0 1-2.75 2.75h-1.75a1.5 1.5 0 0 1-1.5-1.5v-2h-1v2a1.5 1.5 0 0 1-1.5 1.5h-1.75a2.75 2.75 0 0 1-2.75-2.75v-3.33c0-.94.353-1.846.99-2.539l3.854-4.189Zm2.208 1.016a.75.75 0 0 0-1.104 0l-3.854 4.189a2.25 2.25 0 0 0-.594 1.523v3.33c0 .69.56 1.25 1.25 1.25h1.75v-2a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v2h1.75c.69 0 1.25-.56 1.25-1.25v-3.33a2.25 2.25 0 0 0-.594-1.523l-3.854-4.189Z">
+                                                            </path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <span class="Polaris-Navigation__Text">Home</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="Polaris-Navigation__ListItem" id="terms">
+                                    <div class="Polaris-Navigation__ItemWrapper">
+                                        <div class="Polaris-Navigation__ItemInnerWrapper">
+                                            <a class="Polaris-Navigation__Item" tabindex="0" href="terms_of_service.html">
+                                                <div class="Polaris-Navigation__Icon">
+                                                    <span class="Polaris-Icon">
+                                                        <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
+                                                        </span>
+                                                        <svg viewBox="0 0 20 20" style="width: 20px; height: 20px;">
+                                                            <path fill-rule="evenodd"
+                                                                d="M5.5 3.5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2h-3Zm3 1.5h-3a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5Z"
+                                                                id="path2" />
+                                                            <path d="M4.25 11.5a.75.75 0 0 0 0 1.5h11.5a.75.75 0 0 0 0-1.5h-11.5Z" id="path6" />
+                                                            <path d="M11.25 8.75a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5h-3.75a.75.75 0 0 1-.75-.75Z" id="path8" />
+                                                            <path d="M12 4.5a.75.75 0 0 0 0 1.5h3.75a.75.75 0 0 0 0-1.5h-3.75Z" id="path10" />
+                                                            <path d="m 4.25,15 a 0.75,0.75 0 0 0 0,1.5 h 11.5 a 0.75,0.75 0 0 0 0,-1.5 z" id="path245" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <span class="Polaris-Navigation__Text">Terms of Service</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="Polaris-Navigation__ListItem" id="privacy">
+                                    <div class="Polaris-Navigation__ItemWrapper">
+                                        <div class="Polaris-Navigation__ItemInnerWrapper">
+                                            <a class="Polaris-Navigation__Item" tabindex="0" href="privacy.html">
+                                                <div class="Polaris-Navigation__Icon">
+                                                    <span class="Polaris-Icon">
+                                                        <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
+                                                        </span>
+                                                        <svg viewBox="0 0 20 20" style="width: 20px; height: 20px;">
+                                                            <path d="M8.28 8.683a.75.75 0 0 0-1.06 1.06l1.548 1.548a.75.75 0 0 0 1.06 0l2.963-2.962a.75.75 0 0 0-1.06-1.06l-2.433 2.431-1.018-1.017Z"></path>
+                                                            <path fill-rule="evenodd"
+                                                                d="M11.093 2.914a1.75 1.75 0 0 0-2.186 0l-.317.253a15.25 15.25 0 0 1-3.217 1.976l-.847.384a1.71 1.71 0 0 0-1.01 1.628c.28 6.25 4.38 9.048 5.732 9.802.47.262 1.034.262 1.503 0 1.352-.753 5.454-3.55 5.734-9.783a1.71 1.71 0 0 0-1.002-1.623l-.9-.416a15.249 15.249 0 0 1-3.136-1.938l-.354-.283Zm-1.25 1.171a.25.25 0 0 1 .313 0l.354.283a16.749 16.749 0 0 0 3.445 2.129l.9.415a.213.213 0 0 1 .131.195c-.246 5.489-3.827 7.906-4.965 8.54a.042.042 0 0 1-.02.006c-.005 0-.012 0-.022-.006-1.136-.634-4.718-3.053-4.965-8.56-.003-.066.037-.15.133-.194l.846-.385a16.75 16.75 0 0 0 3.534-2.17l.317-.253Z">
+                                                            </path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <span class="Polaris-Navigation__Text">Privacy Policy</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="Polaris-Navigation__ListItem" id="faq">
+                                    <div class="Polaris-Navigation__ItemWrapper">
+                                        <div class="Polaris-Navigation__ItemInnerWrapper">
+                                            <a class="Polaris-Navigation__Item" tabindex="0" href="faq.html">
+                                                <div class="Polaris-Navigation__Icon">
+                                                    <span class="Polaris-Icon">
+                                                        <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
+                                                        </span>
+                                                        <svg viewBox="0 0 20 20" style="width: 20px; height: 20px;">
+                                                            <path fill-rule="evenodd"
+                                                                d="M10 7.25c-.69 0-1.25.56-1.25 1.25a.75.75 0 0 1-1.5 0 2.75 2.75 0 1 1 3.758 2.56.61.61 0 0 0-.226.147.154.154 0 0 0-.032.046.75.75 0 0 1-1.5-.003c0-.865.696-1.385 1.208-1.586a1.25 1.25 0 0 0-.458-2.414Z">
+                                                            </path>
+                                                            <path d="M10 14.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path>
+                                                            <path fill-rule="evenodd" d="M10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm0-1.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <span class="Polaris-Navigation__Text">FAQ</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="Polaris-Navigation__ListItem" id="about">
+                                    <div class="Polaris-Navigation__ItemWrapper">
+                                        <div class="Polaris-Navigation__ItemInnerWrapper">
+                                            <a class="Polaris-Navigation__Item" tabindex="0" href="about.html">
+                                                <div class="Polaris-Navigation__Icon">
+                                                    <span class="Polaris-Icon">
+                                                        <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
+                                                        </span>
+                                                        <svg viewBox="0 0 20 20" style="width: 20px; height: 20px;">
+                                                            <path d="M10 14a.75.75 0 0 1-.75-.75v-3.5a.75.75 0 0 1 1.5 0v3.5a.75.75 0 0 1-.75.75Z"></path>
+                                                            <path d="M9 7a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"></path>
+                                                            <path fill-rule="evenodd" d="M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Zm-1.5 0a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0Z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <span class="Polaris-Navigation__Text">About</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Polaris-TopBar__LogoContainer Polaris-TopBar__LogoDisplayControl">
+                            <a class="Polaris-TopBar__LogoLink" style="width:120px" href="index.html">
+                                <img alt="skuVu&copy;" src="assets/images/skuVu_topbar_logo.svg" class="Polaris-TopBar__Logo" style="width:120px">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="Polaris-TopBar__Search"></div>
+                    <div class="Polaris-TopBar__RightContent">
+                        <div class="Polaris-TopBar__SecondaryMenu">
+                        </div>
+                        <div>
+                            <div class="Polaris-TopBar-Menu__ActivatorWrapper"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div aria-label=" Navigation" class="Polaris-Frame__Navigation" id="AppFrameNav">
+                <nav class="Polaris-Navigation">
+                    <div class="Polaris-Navigation__PrimaryNavigation Polaris-Scrollable Polaris-Scrollable--vertical Polaris-Scrollable--horizontal">
+                        <ul class="Polaris-Navigation__Section"></ul>
+                        <ul class="Polaris-Navigation__Section Polaris-Navigation__Section--withSeparator">
+                            <li class="Polaris-Navigation__SectionHeading"></li>
+                            <li class="Polaris-Navigation__ListItem" id="home">
+                                <div class="Polaris-Navigation__ItemWrapper">
+                                    <div class="Polaris-Navigation__ItemInnerWrapper">
+                                        <a class="Polaris-Navigation__Item" tabindex="0" href="index.html">
+                                            <div class="Polaris-Navigation__Icon">
+                                                <span class="Polaris-Icon">
+                                                    <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
+                                                    </span>
+                                                    <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true">
+                                                        <path fill-rule="evenodd"
+                                                            d="M8.344 3.692a2.25 2.25 0 0 1 3.312 0l3.854 4.19a3.75 3.75 0 0 1 .99 2.538v3.33a2.75 2.75 0 0 1-2.75 2.75h-1.75a1.5 1.5 0 0 1-1.5-1.5v-2h-1v2a1.5 1.5 0 0 1-1.5 1.5h-1.75a2.75 2.75 0 0 1-2.75-2.75v-3.33c0-.94.353-1.846.99-2.539l3.854-4.189Zm2.208 1.016a.75.75 0 0 0-1.104 0l-3.854 4.189a2.25 2.25 0 0 0-.594 1.523v3.33c0 .69.56 1.25 1.25 1.25h1.75v-2a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v2h1.75c.69 0 1.25-.56 1.25-1.25v-3.33a2.25 2.25 0 0 0-.594-1.523l-3.854-4.189Z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <span class="Polaris-Navigation__Text">Home</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="Polaris-Navigation__ListItem" id="terms">
+                                <div class="Polaris-Navigation__ItemWrapper">
+                                    <div class="Polaris-Navigation__ItemInnerWrapper">
+                                        <a class="Polaris-Navigation__Item" tabindex="0" href="terms_of_service.html">
+                                            <div class="Polaris-Navigation__Icon">
+                                                <span class="Polaris-Icon">
+                                                    <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
+                                                    </span>
+                                                    <svg viewBox="0 0 20 20" style="width: 20px; height: 20px;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M5.5 3.5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2h-3Zm3 1.5h-3a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5Z"
+                                                            id="path2" />
+                                                        <path d="M4.25 11.5a.75.75 0 0 0 0 1.5h11.5a.75.75 0 0 0 0-1.5h-11.5Z" id="path6" />
+                                                        <path d="M11.25 8.75a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5h-3.75a.75.75 0 0 1-.75-.75Z" id="path8" />
+                                                        <path d="M12 4.5a.75.75 0 0 0 0 1.5h3.75a.75.75 0 0 0 0-1.5h-3.75Z" id="path10" />
+                                                        <path d="m 4.25,15 a 0.75,0.75 0 0 0 0,1.5 h 11.5 a 0.75,0.75 0 0 0 0,-1.5 z" id="path245" />
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <span class="Polaris-Navigation__Text">Terms of Service</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="Polaris-Navigation__ListItem" id="privacy">
+                                <div class="Polaris-Navigation__ItemWrapper">
+                                    <div class="Polaris-Navigation__ItemInnerWrapper">
+                                        <a class="Polaris-Navigation__Item" tabindex="0" href="privacy.html">
+                                            <div class="Polaris-Navigation__Icon">
+                                                <span class="Polaris-Icon">
+                                                    <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
+                                                    </span>
+                                                    <svg viewBox="0 0 20 20" style="width: 20px; height: 20px;">
+                                                        <path d="M8.28 8.683a.75.75 0 0 0-1.06 1.06l1.548 1.548a.75.75 0 0 0 1.06 0l2.963-2.962a.75.75 0 0 0-1.06-1.06l-2.433 2.431-1.018-1.017Z"></path>
+                                                        <path fill-rule="evenodd"
+                                                            d="M11.093 2.914a1.75 1.75 0 0 0-2.186 0l-.317.253a15.25 15.25 0 0 1-3.217 1.976l-.847.384a1.71 1.71 0 0 0-1.01 1.628c.28 6.25 4.38 9.048 5.732 9.802.47.262 1.034.262 1.503 0 1.352-.753 5.454-3.55 5.734-9.783a1.71 1.71 0 0 0-1.002-1.623l-.9-.416a15.249 15.249 0 0 1-3.136-1.938l-.354-.283Zm-1.25 1.171a.25.25 0 0 1 .313 0l.354.283a16.749 16.749 0 0 0 3.445 2.129l.9.415a.213.213 0 0 1 .131.195c-.246 5.489-3.827 7.906-4.965 8.54a.042.042 0 0 1-.02.006c-.005 0-.012 0-.022-.006-1.136-.634-4.718-3.053-4.965-8.56-.003-.066.037-.15.133-.194l.846-.385a16.75 16.75 0 0 0 3.534-2.17l.317-.253Z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <span class="Polaris-Navigation__Text">Privacy Policy</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="Polaris-Navigation__ListItem" id="faq">
+                                <div class="Polaris-Navigation__ItemWrapper">
+                                    <div class="Polaris-Navigation__ItemInnerWrapper">
+                                        <a class="Polaris-Navigation__Item" tabindex="0" href="faq.html">
+                                            <div class="Polaris-Navigation__Icon">
+                                                <span class="Polaris-Icon">
+                                                    <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
+                                                    </span>
+                                                    <svg viewBox="0 0 20 20" style="width: 20px; height: 20px;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10 7.25c-.69 0-1.25.56-1.25 1.25a.75.75 0 0 1-1.5 0 2.75 2.75 0 1 1 3.758 2.56.61.61 0 0 0-.226.147.154.154 0 0 0-.032.046.75.75 0 0 1-1.5-.003c0-.865.696-1.385 1.208-1.586a1.25 1.25 0 0 0-.458-2.414Z">
+                                                        </path>
+                                                        <path d="M10 14.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path>
+                                                        <path fill-rule="evenodd" d="M10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm0-1.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <span class="Polaris-Navigation__Text">FAQ</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="Polaris-Navigation__ListItem" id="about">
+                                <div class="Polaris-Navigation__ItemWrapper">
+                                    <div class="Polaris-Navigation__ItemInnerWrapper">
+                                        <a class="Polaris-Navigation__Item" tabindex="0" href="about.html">
+                                            <div class="Polaris-Navigation__Icon">
+                                                <span class="Polaris-Icon">
+                                                    <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
+                                                    </span>
+                                                    <svg viewBox="0 0 20 20" style="width: 20px; height: 20px;">
+                                                        <path d="M10 14a.75.75 0 0 1-.75-.75v-3.5a.75.75 0 0 1 1.5 0v3.5a.75.75 0 0 1-.75.75Z"></path>
+                                                        <path d="M9 7a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"></path>
+                                                        <path fill-rule="evenodd" d="M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Zm-1.5 0a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0Z"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <span class="Polaris-Navigation__Text">About</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <main class="Polaris-Frame__Main" id="AppFrameMain">
+                <div class="Polaris-Frame__Content">
+                    <div class="Polaris-Page">
+                        <div class="Polaris-Box"
+                            style="--pc-box-padding-block-end-xs:var(--p-space-400);--pc-box-padding-block-end-md:var(--p-space-600);--pc-box-padding-block-start-xs:var(--p-space-400);--pc-box-padding-block-start-md:var(--p-space-600);--pc-box-padding-inline-start-xs:var(--p-space-400);--pc-box-padding-inline-start-sm:var(--p-space-0);--pc-box-padding-inline-end-xs:var(--p-space-400);--pc-box-padding-inline-end-sm:var(--p-space-0);position:relative">
+                            <div class="Polaris-Page-Header--isSingleRow Polaris-Page-Header--noBreadcrumbs Polaris-Page-Header--mediumTitle">
+                                <div class="Polaris-Page-Header__Row">
+                                    <div class="Polaris-Page-Header__TitleWrapper">
+                                        <h1 class="Polaris-Header-Title">About</h1>
+                                        <h2 class="Polaris-Header-Title__SubTitle">Coming Soon!</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Polaris-Layout" style="padding-top: 1em">
+                            <div class="Polaris-Box">
+                                <ol class="Polaris-List Polaris-List--typeNumber">
+                                    <li class="Polaris-List__Item">What is Skuvu and why should I use it?</li>
+                                    <li class="Polaris-List__Item">What are the key features of Skuvu?</li>
+                                    <li class="Polaris-List__Item">How can Skuvu benefit my business?</li>
+                                    <li class="Polaris-List__Item">Where can I find documentation and resources for Skuvu?</li>
+                                </ol>
+                                <div class="Polaris-Box" style="padding-top: 1em">
+                                    <div class="Polaris-TextField__Segment">
+                                        <p class="Polaris-Text--medium">&copy; 2023 Fairknowe Inc. All rights reserved.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+            </main>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const toggleButton = document.getElementById('menuToggle');
+            const hamburger = document.getElementById('hamburger');
+            const menu = document.getElementById('menu');
+
+            toggleButton.addEventListener('click', function () {
+                console.log(`menu.style.display before: ${menu.style.display}`)
+                console.log(`menu.style.zIndex before: ${menu.style.zIndex}`)
+                console.log(`hamburger.style.display before: ${hamburger.style.display}`)
+                console.log(`hamburger.style.zIndex before: ${hamburger.style.zIndex}`)
+                // menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+                if (menu.style.display === 'none') {
+                    menu.style.display = 'block';
+                    menu.style.zIndex = 1000; // A higher z-index when visible
+                } else {
+                    menu.style.display = 'none';
+                    menu.style.zIndex = 100; // Reset to default z-index
+                }
+
+                // hamburger.style.display = menu.style.display === 'none' ? 'block' : 'none';
+                if (hamburger.style.display === 'none') {
+                    hamburger.style.display = 'block';
+                    hamburger.style.zIndex = 1000; // A higher z-index when visible
+                } else {
+                    hamburger.style.display = 'none';
+                    hamburger.style.zIndex = 100; // Reset to default z-index
+                }
+                console.log(`menu.style.display after: ${menu.style.display}`)
+                console.log(`menu.style.zIndex after: ${menu.style.zIndex}`)
+                console.log(`hamburger.style.display after: ${hamburger.style.display}`)
+                console.log(`hamburger.style.zIndex after: ${hamburger.style.zIndex}`)
+            });
+
+            menu.addEventListener('click', function (event) {
+                console.log('menu event:', event);
+                console.log('menu event target:', event.target);
+                event.stopPropagation(); // This prevents the click from bubbling up to the document
+            });
+
+            document.addEventListener('click', function (event) {
+                console.log('document event:', event);
+                // setTimeout(() => {
+                const isClickInsideMenu = menu.contains(event.target);
+                console.log(`isClickInsideMenu: ${isClickInsideMenu}`)
+                const isClickOnButton = toggleButton.contains(event.target);
+                console.log(`isClickOnButton: ${isClickOnButton}`)
+
+                if (!isClickInsideMenu && !isClickOnButton && menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                    hamburger.style.display = 'block';
+                }
+                // }, 100);
+            });
+        });
+    </script>
+</body>
+
+</html>

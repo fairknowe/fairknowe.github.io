@@ -1,0 +1,32 @@
+.sku-logo {
+    max-width: 5rem;
+    height: auto;
+}
+
+/* Hide the Menu by Default
+.menu {
+    display: none;
+}
+
+/* Show Menu when Checkbox is Checked */
+#menuToggle:checked+label+.menu {
+    display: block;
+}
+
+/* Style for the Menu and Label */
+label {
+    cursor: pointer;
+    /* Add more styling as needed */
+}
+
+.menu {
+    /* Style your menu */
+    background-color: white;
+}
+
+*/ #menu {
+    position: relative;
+    /* or absolute, fixed, sticky */
+    z-index: 100;
+    /* Default z-index */
+}
