@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('menuToggle');
     const hamburger = document.getElementById('hamburger');
     const menu = document.getElementById('menu');
